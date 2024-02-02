@@ -1,8 +1,8 @@
-const express = require('express')
+import express from 'express'
 const app = express()
 const port = 8080
-const routerProducts = require('./routes/products.router')
-const routerCarts = require('./routes/carts.router')
+import routerProducts from './routes/products.router.js'
+import routerCarts from './routes/carts.router.js'
 
 app.use(express.json())
 app.use('/api/products', routerProducts)
